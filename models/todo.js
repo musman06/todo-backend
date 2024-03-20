@@ -1,8 +1,14 @@
 const { Sequelize, DataTypes } = require('sequelize');
-const sequelize = new Sequelize('todo-db', 'root', 'kitten12345678', {
-  host: 'localhost',
-  dialect: 'mysql'
-});
+const sequelize = new Sequelize(
+  'todo-db',
+  'avnadmin',
+  'AVNS_wMcr1HfxxONrZcdvXEQ',
+  {
+    host: 'todo-mysql-todo-mysql.a.aivencloud.com',
+    port: 24668,
+    dialect: 'mysql'
+  }
+);
 
 const Todo = sequelize.define(
   'Todo',
