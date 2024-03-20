@@ -13,7 +13,7 @@ router
 router
   .route('/:id')
   .get(todoController.getTodo)
-  .patch(todoController.updateTodo)
+  .patch(todoController.checkBody, todoController.updateTodo)
   .delete(todoController.deleteTodo);
 
 module.exports = router;
