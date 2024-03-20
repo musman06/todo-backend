@@ -6,8 +6,9 @@ const todos = JSON.parse(
 
 exports.checkID = (req, res, next, val) => {
   console.log(`Tour id is: ${val}`);
+  const id = req?.params?.id * 1;
 
-  if (req.params.id * 1 > todos?.length) {
+  if (todos?.filter(todo => todo?.id === id)?.length) {
     return res.status(404).json({
       status: 'fail',
       message: 'Invalid ID'
