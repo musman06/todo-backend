@@ -1,5 +1,3 @@
-// models/todo.js
-
 const { Sequelize, DataTypes } = require('sequelize');
 const sequelize = new Sequelize('todo-db', 'root', 'kitten12345678', {
   host: 'localhost',
