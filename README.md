@@ -29,6 +29,13 @@ To run this project locally, follow these steps:
 
 `npm install`
 
-1. Start App:
+3. Start App:
 
 `npm start`
+
+### Note
+First, run the backend application from the URL "https://right-nostalgic-guilty.glitch.me/api/v1/todo" so that the project awakes from sleep and starts working properly since Glitch service is free and makes the project sleep after a few minutes of inactivity.
+
+## Deployment Links
+Backend URL: https://right-nostalgic-guilty.glitch.me/api/v1/todo
+MySQL deployed on Aiven.io servies: todo-mysql-todo-mysql.a.aivencloud.com
